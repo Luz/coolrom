@@ -6,7 +6,7 @@ grep "By Genre" ./1raw/* \
 | grep "href=\"/roms/$@/" \
 | grep href \
 | grep php \
-| sed -r "s|href=\"/roms/$@/([0-9]+)/.*\.php\"></a>|wget http://coolrom.com/dlpop.php?id=\1\ncat dlpop.php\?id=\1 \| grep \'action\=\\\"http://dl.coolrom.com/dl/\' \| sed -r \'s\|\.*action\=\\\"\(http://dl.coolrom.com/dl/\[0-9\]\+/.\+/\[0-9\]\+/\)\\\"\.\*\|wget \\\1\|\' > ../3tmpdl.sh\ncd ../3download\nsh ../3tmpdl.sh\nmv index.html \1.zip\n\ncd ../2links|" \
+| sed -r "s|href=\"/roms/$@/([0-9]+)/.*\.php\"></a>|wget http://coolrom.com/dlpop.php?id=\1\ncat dlpop.php\?id=\1 \| grep \'action\=\\\"http://dfw.coolrom.com/dl/\' \| sed -r \'s\|\.*action\=\\\"\(http://dfw.coolrom.com/dl/\[0-9\]\+/.\+/\[0-9\]\+/\)\\\"\.\*\|wget \\\1\|\' > ../3tmpdl.sh\ncd ../3download\nsh ../3tmpdl.sh\nmv index.html \1.zip\n\ncd ../2links|" \
 >> 2tmplinks.sh
 
 #1 nur href lines die auf der quelltextzeile "By Genre" sind, denn sonst werden die "top games" mehrfach genommen
