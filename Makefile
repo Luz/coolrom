@@ -7,17 +7,11 @@
 #PLATFORM:=c64 #Commodore 64
 #PLATFORM:=cps1 #CPS1
 #PLATFORM:=cps2 #CPS2
-#PLATFORM:=gba #Gameboy Advance
-#PLATFORM:=gbc #Gameboy Color
 #PLATFORM:=mame #MAME
 #PLATFORM:=namcosystem22 #Namco System 22
 #PLATFORM:=neogeo #Neo Geo
 #PLATFORM:=neogeocd #Neo Geo CD
 #PLATFORM:=neogeopocket #Neo Geo Pocket
-#PLATFORM:=nes #Nintendo
-#PLATFORM:=n64 #Nintendo 64
-#PLATFORM:=nds #Nintendo DS
-#PLATFORM:=gcn #Nintendo Gamecube
 #PLATFORM:=segacd #Sega CD
 #PLATFORM:=dc #Sega Dreamcast
 #PLATFORM:=gamegear #Sega Game Gear
@@ -26,7 +20,8 @@
 #PLATFORM:=model2 #Sega Model 2
 #PLATFORM:=saturn #Sega Saturn
 #PLATFORM:=psx #Sony Playstation
-#PLATFORM:=snes #Super Nintendo
+#PLATFORM:=ps2 #Sony Playstation 2
+#PLATFORM:=psp #Sony Playstation Portable
 
 
 all: 4finalzeugs
